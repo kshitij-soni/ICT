@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>Shopping Website</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap" rel="stylesheet">
+
+<link href="style.css" rel="stylesheet">
+    
+        
+           
+           <script type = "text/javascript">
+               function displayNextImage() {
+                   x = (x === images.length - 1) ? 0 : x + 1;
+                   document.getElementById("img").src = images[x];
+               }
+     
+               function displayPreviousImage() {
+                   x = (x <= 0) ? images.length - 1 : x - 1;
+                   document.getElementById("img").src = images[x];
+               }
+     
+               function startTimer() {
+                   setInterval(displayNextImage, 3000);
+               }
+     
+               var images = [], x = -1;
+               images[0] = "Dog1.jpg";
+               images[1] = "do2.jpg";
+               images[2] = "dog3.jpg";
+               images[3] = "Dog4.jpg";
+           </script>
+        </head>
+     
+<body onload = "startTimer()" background="Background.jpg">
+
+ <center>
+<br>
+<div id="Head">
+   <h1 class="Header"><b style="color:red;">Eggs-celent</b> <b>Website</b></h1> 
+   <img id="Logo" src="DOg5.jpg">
+</div>
+<br><br>
+<div id="Main"><br><br>
+    <img id="img" src="">
+    <h3 id="text">ICT Carnival Yay ICT Carnival Yay ICT Carnival Yay ICT Carnival 
+        Yay ICT Carnival Yay ICT Carnival Yay Yay ICT Carnival Yay ICT Carnival Yay
+        Yay ICT Carnival Yay ICT Carnival YayYay ICT Carnival Yay ICT Carnival Yay
+        Yay ICT Carnival Yay ICT Carnival YayYay ICT Carnival Yay ICT Carnival Yay
+        ICT Carnival Yay ICT Carnival Yay ICT Carnival Yay ICT Carnival 
+        Yay ICT Carnival Yay ICT Carnival Yay Yay ICT Carnival Yay ICT Carnival Yay
+        Yay ICT Carnival Yay ICT Carnival Yay Yay ICT Carnival Yay ICT Carnival 
+    </h3> &nbsp; 
+    <br><br><Br>
+<div id="bar">
+    <Button class="btn btn-info">cloth</Button>
+    <Button class="btn btn-info">clother</Button>
+    <Button class="btn btn-info">clothest</Button>
+</div>
+ </div>
+
+ </center> 
+
+</body>
+</html>
+
